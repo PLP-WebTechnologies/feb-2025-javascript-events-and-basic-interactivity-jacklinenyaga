@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JS Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Event Handling Section -->
+    <section>
+      <button id="color-changer">Change My Color</button>
+      <div id="hover-box">Hover Over Me</div>
+      <p id="key-display">Press any key...</p>
+      <button id="secret-button">Double Click Me</button>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section>
+      <div class="image-gallery">
+        <img id="main-image" src="default.jpg" alt="Main Image">
+        <div class="thumbnails">
+          <img class="gallery-img" src="image1.jpg" alt="Image 1">
+          <img class="gallery-img" src="image2.jpg" alt="Image 2">
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="tab1">Tab 1</button>
+        <button class="tab" data-tab="tab2">Tab 2</button>
+        <div id="tab1" class="tab-content active">Content 1</div>
+        <div id="tab2" class="tab-content">Content 2</div>
+      </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section>
+      <form id="signup-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <span id="email-error" class="error"></span>
+        
+        <input type="password" id="password" placeholder="Password" required>
+        <span id="password-error" class="error"></span>
+        
+        <button id="animated-button" type="submit">Sign Up</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
